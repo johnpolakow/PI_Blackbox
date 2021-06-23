@@ -1,0 +1,214 @@
+EESchema Schematic File Version 4
+LIBS:Pi_Blackbox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Current:INA240A1D U12
+U 1 1 5CB4561E
+P 5200 3150
+F 0 "U12" H 5200 3450 50  0000 L CNN
+F 1 "INA240" H 5150 3350 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5200 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 5350 3300 50  0001 C CNN
+	1    5200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R32
+U 1 1 5CB45A12
+P 5650 3150
+F 0 "R32" V 5445 3150 50  0000 C CNN
+F 1 "10K" V 5536 3150 50  0000 C CNN
+F 2 "" H 5650 3150 50  0001 C CNN
+F 3 "~" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C46
+U 1 1 5CB45C19
+P 5950 3450
+F 0 "C46" H 6042 3496 50  0000 L CNN
+F 1 "30uF" H 6042 3405 50  0000 L CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "~" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 6650 3350 0    50   ~ 0
+RC const = .3 sec
+Text Notes 6650 3150 0    50   ~ 0
+Vout = 20*Vshunt
+Text GLabel 6300 3150 2    50   Input ~ 0
+I_AVG
+Text Notes 8100 3250 2    50   ~ 0
+i_shunt = (V_out/20)/.125 = .4*Vout
+Wire Wire Line
+	4450 3050 4900 3050
+Wire Wire Line
+	5550 3150 5500 3150
+Wire Wire Line
+	5750 3150 5950 3150
+Wire Wire Line
+	5100 3450 5100 3750
+Wire Wire Line
+	5950 3750 5250 3750
+Text GLabel 6800 2550 2    50   Input ~ 0
++5V
+Wire Wire Line
+	5200 3450 5250 3450
+Wire Wire Line
+	5250 3450 5250 3750
+Connection ~ 5250 3450
+Wire Wire Line
+	5250 3450 5300 3450
+Connection ~ 5250 3750
+Wire Wire Line
+	5250 3750 5100 3750
+Text GLabel 3550 1850 0    50   Input ~ 0
++15V
+$Comp
+L Device:R_Shunt_US R31
+U 1 1 5D00A277
+P 4550 1850
+F 0 "R31" V 4325 1850 50  0000 C CNN
+F 1 ".125R" V 4416 1850 50  0000 C CNN
+F 2 "" V 4480 1850 50  0001 C CNN
+F 3 "~" H 4550 1850 50  0001 C CNN
+	1    4550 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5D00A528
+P 5150 2100
+F 0 "C45" H 4850 2150 50  0000 L CNN
+F 1 "10,000uF" H 4700 2050 50  0000 L CNN
+F 2 "" H 5188 1950 50  0001 C CNN
+F 3 "~" H 5150 2100 50  0001 C CNN
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2300 5150 2250
+Wire Wire Line
+	4750 1850 5150 1850
+Wire Wire Line
+	5150 1950 5150 1850
+Wire Wire Line
+	4450 2000 4450 3050
+Wire Wire Line
+	4650 2000 4650 3250
+Wire Wire Line
+	4650 3250 4900 3250
+$Comp
+L power:GNDA #PWR042
+U 1 1 5D00C6EF
+P 5250 3750
+F 0 "#PWR042" H 5250 3500 50  0001 C CNN
+F 1 "GNDA" H 5255 3577 50  0000 C CNN
+F 2 "" H 5250 3750 50  0001 C CNN
+F 3 "" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR041
+U 1 1 5D00C73D
+P 5150 2300
+F 0 "#PWR041" H 5150 2050 50  0001 C CNN
+F 1 "GNDA" H 5155 2127 50  0000 C CNN
+F 2 "" H 5150 2300 50  0001 C CNN
+F 3 "" H 5150 2300 50  0001 C CNN
+	1    5150 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 3150
+Wire Wire Line
+	5100 2550 5100 2850
+$Comp
+L Device:C_Small C47
+U 1 1 5D00E399
+P 5950 2700
+F 0 "C47" H 6042 2746 50  0000 L CNN
+F 1 ".1uF" H 6042 2655 50  0000 L CNN
+F 2 "" H 5950 2700 50  0001 C CNN
+F 3 "~" H 5950 2700 50  0001 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2600 5950 2550
+$Comp
+L power:GNDA #PWR043
+U 1 1 5D00E719
+P 5950 2800
+F 0 "#PWR043" H 5950 2550 50  0001 C CNN
+F 1 "GNDA" H 5955 2627 50  0000 C CNN
+F 2 "" H 5950 2800 50  0001 C CNN
+F 3 "" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB4
+U 1 1 5D00EE06
+P 6400 2550
+F 0 "FB4" V 6163 2550 50  0000 C CNN
+F 1 "500mA rated" V 6254 2550 50  0000 C CNN
+F 2 "" V 6330 2550 50  0001 C CNN
+F 3 "~" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2550 6800 2550
+Wire Wire Line
+	5950 3150 5950 3350
+Wire Wire Line
+	5950 3550 5950 3750
+Text Notes 6000 3650 0    50   ~ 0
+ceramic
+Connection ~ 5950 2550
+Wire Wire Line
+	5950 2550 6300 2550
+Wire Wire Line
+	5100 2550 5950 2550
+Wire Wire Line
+	3550 1850 4350 1850
+Wire Wire Line
+	5150 1850 6050 1850
+Connection ~ 5150 1850
+Text Notes 6150 1900 0    47   ~ 0
+TO CCC
+Wire Wire Line
+	5950 3150 6200 3150
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5DA0572E
+P 6200 3100
+F 0 "TP11" H 6150 3300 50  0000 L CNN
+F 1 "TestPoint" H 6258 3129 50  0001 L CNN
+F 2 "" H 6400 3100 50  0001 C CNN
+F 3 "~" H 6400 3100 50  0001 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3100 6200 3150
+Wire Wire Line
+	6200 3150 6300 3150
+Connection ~ 6200 3150
+$EndSCHEMATC

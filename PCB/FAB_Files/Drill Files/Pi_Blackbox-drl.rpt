@@ -1,0 +1,51 @@
+Drill report for /home/yonkelbot/FLIR/Kicad/BlackBox/Pi_BlackBox_V4/Pi_Blackbox.kicad_pcb
+Created on Tue 14 Jan 2020 12:11:57 AM PST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  In3.Cu                    in3
+    L5 :  In4.Cu                    in4
+    L6 :  B.Cu                      back
+
+
+Drill file 'Pi_Blackbox-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.20mm  0.008"  (32 holes)
+    T2  0.30mm  0.012"  (349 holes)
+    T3  0.30mm  0.012"  (2 holes)
+    T4  0.40mm  0.016"  (1025 holes)
+    T5  0.50mm  0.020"  (64 holes)
+    T6  0.76mm  0.030"  (4 holes)
+    T7  0.80mm  0.031"  (22 holes)
+    T8  0.85mm  0.033"  (26 holes)
+    T9  0.95mm  0.037"  (10 holes)
+    T10  0.97mm  0.038"  (2 holes)
+    T11  1.00mm  0.039"  (49 holes)
+    T12  1.05mm  0.041"  (2 holes)
+    T13  1.10mm  0.043"  (6 holes)
+    T14  1.20mm  0.047"  (12 holes)
+    T15  1.30mm  0.051"  (14 holes)
+    T16  1.40mm  0.055"  (8 holes)
+    T17  1.85mm  0.073"  (12 holes)
+    T18  2.00mm  0.079"  (2 holes)
+    T19  2.10mm  0.083"  (2 holes)
+    T20  2.70mm  0.106"  (4 holes)
+    T21  2.73mm  0.107"  (1 hole)
+    T22  2.75mm  0.108"  (1 hole)
+    T23  3.10mm  0.122"  (2 holes)
+    T24  3.26mm  0.129"  (2 holes)
+    T25  3.50mm  0.138"  (4 holes)
+    T26  4.00mm  0.157"  (2 holes)
+
+    Total plated holes count 1659
+
+
+Drill file 'Pi_Blackbox-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

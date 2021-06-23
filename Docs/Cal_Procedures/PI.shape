@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <name>Cal_Procedures - PI</name>
+  <icon>PI.png</icon>
+  <connections/>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:image x="15.45" y="0.899999" width="27.6551" height="22.1453" xlink:href="PI_01.png"/>
+  </svg:svg>
+</shape>

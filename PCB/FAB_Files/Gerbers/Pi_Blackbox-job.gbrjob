@@ -1,0 +1,208 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "5.1.5-52549c5~84~ubuntu18.04.1"
+    },
+    "CreationDate":  "2020-01-13T16:33:20-08:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "Pi_Blackbox",
+      "GUID": "50695f42-6c61-4636-9b62-6f782e6b6963",
+      "Revision": "R3"
+    },
+    "Size":
+    {
+      "X": 175.236,
+      "Y": 125.776
+    },
+    "LayerNumber": 6,
+    "BoardThickness":  1.600
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.190,
+      "PadToTrack":  0.190,
+      "TrackToTrack":  0.190,
+      "MinLineWidth":  0.250,
+      "TrackToRegion":  0.190,
+      "RegionToRegion":  0.190
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad":  0.190,
+      "PadToTrack":  0.190,
+      "TrackToTrack":  0.190,
+      "MinLineWidth":  0.250,
+      "TrackToRegion":  0.254,
+      "RegionToRegion":  0.254
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "Pi_Blackbox-F_Cu.gbr",
+      "FileFunction":  "Copper,L1,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-In1_Cu.gbr",
+      "FileFunction":  "Copper,L2,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-In2_Cu.gbr",
+      "FileFunction":  "Copper,L3,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-In3_Cu.gbr",
+      "FileFunction":  "Copper,L4,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-In4_Cu.gbr",
+      "FileFunction":  "Copper,L5,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_Cu.gbr",
+      "FileFunction":  "Copper,L6,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_Adhes.gbr",
+      "FileFunction":  "Glue,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-F_Paste.gbr",
+      "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_Paste.gbr",
+      "FileFunction":  "SolderPaste,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-F_SilkS.gbr",
+      "FileFunction":  "Legend,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_SilkS.gbr",
+      "FileFunction":  "Legend,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-F_Mask.gbr",
+      "FileFunction":  "SolderMask,Top",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_Mask.gbr",
+      "FileFunction":  "SolderMask,Bot",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "Pi_Blackbox-Edge_Cuts.gbr",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Pi_Blackbox-B_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Bot",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer F.SilkS"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer F.Paste"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer F.Mask"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer F.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L1/L2"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer In1.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L2/L3"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer In2.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L3/L4"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer In3.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L4/L5"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer In4.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L5/L6"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer B.Cu"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer B.Paste"
+    },
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer B.SilkS"
+    }
+  ]
+}

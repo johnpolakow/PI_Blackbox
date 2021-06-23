@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 15
+Title "PI BLACKBOX"
+Date "2020-01-10"
+Rev "3"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small_US R19
+U 1 1 5CD202DB
+P 4750 1800
+F 0 "R19" H 4818 1846 50  0000 L CNN
+F 1 "300R" H 4818 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 1800 50  0001 C CNN
+F 3 "~" H 4750 1800 50  0001 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+Text Notes 4000 2450 0    50   ~ 0
+Constant Current\nSource 100uA
+$Comp
+L Device:C_Small C14
+U 1 1 5CE23268
+P 5300 2100
+F 0 "C14" H 5392 2146 50  0000 L CNN
+F 1 ".1uF" H 5392 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5300 2100 50  0001 C CNN
+F 3 "~" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2000 4900 2000
+Wire Wire Line
+	4750 2000 4750 1900
+Connection ~ 4750 2000
+$Comp
+L Device:C_Small C15
+U 1 1 5CEDEEE5
+P 5700 2100
+F 0 "C15" H 5792 2146 50  0000 L CNN
+F 1 "1uF" H 5792 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5700 2100 50  0001 C CNN
+F 3 "~" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2000 5700 2000
+Connection ~ 5300 2000
+Wire Wire Line
+	6300 4500 6300 4400
+Text GLabel 4700 1600 0    47   Input ~ 0
++5V
+Wire Wire Line
+	4700 1600 4750 1600
+Wire Wire Line
+	4750 1600 4750 1700
+Text Label 6200 4400 2    47   ~ 0
+100uA
+Text Notes 4250 800  0    79   ~ 16
+TEMP DIODE\nCURRENT SOURCE
+Wire Wire Line
+	4750 2000 4750 2100
+Wire Wire Line
+	4900 2100 4900 2000
+Connection ~ 4900 2000
+Wire Wire Line
+	4900 2000 4750 2000
+Wire Wire Line
+	6300 4700 6300 4750
+Connection ~ 6300 4400
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E3ABD0C
+P 5300 2200
+AR Path="/5D35BFAB/5E3ABD0C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC2E26B/5E3ABD0C" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 5300 1950 50  0001 C CNN
+F 1 "GNDA" H 5305 2027 50  0000 C CNN
+F 2 "" H 5300 2200 50  0001 C CNN
+F 3 "" H 5300 2200 50  0001 C CNN
+	1    5300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E3AD35E
+P 5700 2200
+AR Path="/5D35BFAB/5E3AD35E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC2E26B/5E3AD35E" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 5700 1950 50  0001 C CNN
+F 1 "GNDA" H 5705 2027 50  0000 C CNN
+F 2 "" H 5700 2200 50  0001 C CNN
+F 3 "" H 5700 2200 50  0001 C CNN
+	1    5700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E3AEA0B
+P 6300 4750
+AR Path="/5D35BFAB/5E3AEA0B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC2E26B/5E3AEA0B" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 6300 4500 50  0001 C CNN
+F 1 "GNDA" H 6305 4577 50  0000 C CNN
+F 2 "" H 6300 4750 50  0001 C CNN
+F 3 "" H 6300 4750 50  0001 C CNN
+	1    6300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pi_Blackbox-rescue:DG419LE-DG419LE U17
+U 1 1 5E3B681E
+P 4750 3450
+F 0 "U17" V 4950 3650 50  0000 C CNN
+F 1 "DG419LE" V 4500 3150 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4750 2850 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 4750 3250 50  0001 C CNN
+	1    4750 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 2900 5300 3100
+Wire Wire Line
+	5150 3350 5300 3350
+Wire Wire Line
+	5150 3550 5300 3550
+Wire Wire Line
+	5150 3450 5550 3450
+Wire Wire Line
+	5300 2900 5000 2900
+Wire Wire Line
+	5000 2900 5000 2700
+Wire Wire Line
+	4750 3150 4750 2700
+Wire Wire Line
+	4900 3150 4900 2700
+Wire Wire Line
+	4850 4400 4850 3750
+Wire Wire Line
+	4850 4400 6300 4400
+Text GLabel 5550 3450 2    51   Input ~ 0
+SW_CTRL
+Wire Wire Line
+	5300 3550 5300 3700
+Connection ~ 5300 3100
+Wire Wire Line
+	5300 3100 5300 3350
+Wire Wire Line
+	4550 3550 4400 3550
+Wire Wire Line
+	4400 3450 4550 3450
+$Comp
+L Device:C_Small C78
+U 1 1 5E3CC419
+P 4150 3600
+F 0 "C78" H 4242 3646 50  0000 L CNN
+F 1 ".1uF" H 4242 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3500 4150 3450
+Wire Wire Line
+	4150 3450 4400 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	4400 3450 4400 3550
+Text GLabel 4100 3450 0    47   Input ~ 0
++5V
+Wire Wire Line
+	4150 3450 4100 3450
+Connection ~ 4150 3450
+Text Notes 3350 3350 0    51   ~ 0
+DG419 = 11R on resistance
+$Comp
+L power:GNDA #PWR0104
+U 1 1 5E527FAB
+P 5500 3100
+F 0 "#PWR0104" H 5500 2850 50  0001 C CNN
+F 1 "GNDA" H 5505 2927 50  0000 C CNN
+F 2 "" H 5500 3100 50  0001 C CNN
+F 3 "" H 5500 3100 50  0001 C CNN
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3100 5500 3100
+$Comp
+L power:GNDA #PWR0105
+U 1 1 5E5298B3
+P 5300 3700
+F 0 "#PWR0105" H 5300 3450 50  0001 C CNN
+F 1 "GNDA" H 5305 3527 50  0000 C CNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0106
+U 1 1 5E52B5E2
+P 4150 3700
+F 0 "#PWR0106" H 4150 3450 50  0001 C CNN
+F 1 "GNDA" H 4155 3527 50  0000 C CNN
+F 2 "" H 4150 3700 50  0001 C CNN
+F 3 "" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 7670 2648 0    79   ~ 16
+DEWAR PINS:\nPin 1: (-)TEMP DIODE\nPin 2. (-) TEMP DIODE\nPin 3. (+)TEMP DIODE\nPin 4. (+) TEMP DIODE\nPin 15. (+)CCC Temp Diode\nPin 16. (-) CCC Temp Diode
+$Comp
+L PI_Blackbox:REF200 U9
+U 1 1 5E058CC0
+P 4900 2400
+F 0 "U9" H 5150 2300 50  0000 L CNN
+F 1 "REF200" H 5100 2200 50  0000 L CIN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4725 2425 50  0001 R CIN
+F 3 "" H 5200 2400 50  0001 C CIN
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 4400 2    51   Input ~ 0
+100uA
+Wire Wire Line
+	6300 4400 6600 4400
+$Comp
+L Device:C_Small C?
+U 1 1 5CD123E3
+P 6300 4600
+AR Path="/5CD123E3" Ref="C?"  Part="1" 
+AR Path="/5CC2E26B/5CD123E3" Ref="C16"  Part="1" 
+F 0 "C16" H 6100 4700 50  0000 L CNN
+F 1 "1000pF" H 5950 4600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6300 4600 50  0001 C CNN
+F 3 "~" H 6300 4600 50  0001 C CNN
+	1    6300 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

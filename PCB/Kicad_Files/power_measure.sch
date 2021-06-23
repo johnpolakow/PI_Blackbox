@@ -1,0 +1,637 @@
+EESchema Schematic File Version 4
+LIBS:power_measure-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	3500 1650 4250 1650
+Text Notes 3750 1300 0    50   ~ 0
+HP PS
+$Comp
+L Amplifier_Current:INA240A1D U2
+U 1 1 5CB4561E
+P 6100 1600
+F 0 "U2" H 6100 1900 50  0000 L CNN
+F 1 "INA240" H 6050 1800 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6100 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 6250 1750 50  0001 C CNN
+	1    6100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5CB45A12
+P 6550 1600
+F 0 "R2" V 6345 1600 50  0000 C CNN
+F 1 "10K" V 6436 1600 50  0000 C CNN
+F 2 "" H 6550 1600 50  0001 C CNN
+F 3 "~" H 6550 1600 50  0001 C CNN
+	1    6550 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5CB45C19
+P 6850 1800
+F 0 "C2" H 6942 1846 50  0000 L CNN
+F 1 "30uF" H 6942 1755 50  0000 L CNN
+F 2 "" H 6850 1800 50  0001 C CNN
+F 3 "~" H 6850 1800 50  0001 C CNN
+	1    6850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1700 6850 1600
+Text Notes 7900 1750 0    50   ~ 0
+RC const = .3 sec
+Text Notes 7900 1550 0    50   ~ 0
+Vout = 20*Vshunt
+$Comp
+L Device:C C3
+U 1 1 5D2FD93B
+P 5050 1250
+F 0 "C3" H 4750 1300 50  0000 L CNN
+F 1 "1500uF" H 4650 1200 50  0000 L CNN
+F 2 "" H 5088 1100 50  0001 C CNN
+F 3 "~" H 5050 1250 50  0001 C CNN
+	1    5050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D2FEA70
+P 5450 1000
+F 0 "R3" V 5245 1000 50  0000 C CNN
+F 1 ".125R" V 5336 1000 50  0000 C CNN
+F 2 "" H 5450 1000 50  0001 C CNN
+F 3 "~" H 5450 1000 50  0001 C CNN
+	1    5450 1000
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6350 850  6350 1150
+Wire Notes Line
+	6350 1150 6800 1150
+Wire Notes Line
+	6800 1150 6800 850 
+Wire Notes Line
+	6800 850  6350 850 
+Text Notes 6650 1050 2    50   ~ 0
+CCC
+Text GLabel 7350 1600 2    50   Input ~ 0
+V_AVG
+Text Notes 9350 1650 2    50   ~ 0
+i_shunt = (V_out/20)/.125 = .4*Vout
+Wire Wire Line
+	5550 1000 5650 1000
+Wire Wire Line
+	5050 1000 5300 1000
+Wire Wire Line
+	5300 1500 5300 1000
+Wire Wire Line
+	5300 1500 5800 1500
+Connection ~ 5300 1000
+Wire Wire Line
+	5300 1000 5350 1000
+Wire Wire Line
+	5650 1700 5650 1000
+Wire Wire Line
+	5650 1700 5800 1700
+$Comp
+L power:+VDC #PWR07
+U 1 1 5D302900
+P 4200 1000
+F 0 "#PWR07" H 4200 900 50  0001 C CNN
+F 1 "+VDC" V 4200 1350 50  0000 C CNN
+F 2 "" H 4200 1000 50  0001 C CNN
+F 3 "" H 4200 1000 50  0001 C CNN
+	1    4200 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-VDC #PWR08
+U 1 1 5D302C75
+P 4200 1550
+F 0 "#PWR08" H 4200 1450 50  0001 C CNN
+F 1 "-VDC" V 4200 1900 50  0000 C CNN
+F 2 "" H 4200 1550 50  0001 C CNN
+F 3 "" H 4200 1550 50  0001 C CNN
+	1    4200 1550
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	6950 850  6950 1150
+Wire Notes Line
+	6950 1150 7400 1150
+Wire Notes Line
+	7400 1150 7400 850 
+Wire Notes Line
+	7400 850  6950 850 
+Text Notes 7350 1050 2    50   ~ 0
+HP34401
+Connection ~ 5650 1000
+Wire Wire Line
+	5050 1100 5050 1000
+Connection ~ 5050 1000
+Wire Wire Line
+	5650 1000 6350 1000
+Wire Wire Line
+	6800 1000 6950 1000
+Wire Wire Line
+	7400 1000 7850 1000
+Wire Wire Line
+	7850 1000 7850 2200
+Wire Wire Line
+	7850 2200 6850 2200
+Wire Wire Line
+	4500 2200 4500 1550
+Wire Wire Line
+	4500 1550 4200 1550
+Wire Notes Line
+	3500 850  3500 1650
+Wire Notes Line
+	3500 850  4250 850 
+Wire Notes Line
+	4250 850  4250 1650
+Wire Wire Line
+	4500 1550 5050 1550
+Wire Wire Line
+	5050 1550 5050 1400
+Connection ~ 4500 1550
+Wire Wire Line
+	4200 1000 5050 1000
+Connection ~ 6850 1600
+Wire Notes Line
+	3250 4000 4000 4000
+Text Notes 3500 3650 0    50   ~ 0
+HP PS
+$Comp
+L Amplifier_Current:INA240A1D U4
+U 1 1 5D30DE29
+P 5850 3950
+F 0 "U4" H 6050 4150 50  0000 L CNN
+F 1 "INA240" H 5950 4050 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5850 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 6000 4100 50  0001 C CNN
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5D30DE39
+P 7500 4300
+F 0 "C4" H 7592 4346 50  0000 L CNN
+F 1 "30uF" H 7592 4255 50  0000 L CNN
+F 2 "" H 7500 4300 50  0001 C CNN
+F 3 "~" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D30DE43
+P 4800 3600
+F 0 "C1" H 4500 3650 50  0000 L CNN
+F 1 "1500uF" H 4400 3550 50  0000 L CNN
+F 2 "" H 4838 3450 50  0001 C CNN
+F 3 "~" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D30DE4A
+P 5200 3350
+F 0 "R1" V 4995 3350 50  0000 C CNN
+F 1 ".125R" V 5086 3350 50  0000 C CNN
+F 2 "" H 5200 3350 50  0001 C CNN
+F 3 "~" H 5200 3350 50  0001 C CNN
+	1    5200 3350
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6100 3200 6100 3500
+Wire Notes Line
+	6100 3500 6550 3500
+Wire Notes Line
+	6550 3500 6550 3200
+Wire Notes Line
+	6550 3200 6100 3200
+Text Notes 6400 3400 2    50   ~ 0
+CCC
+Text GLabel 8100 3950 2    50   Input ~ 0
+V_PK
+Wire Wire Line
+	5300 3350 5400 3350
+Wire Wire Line
+	4800 3350 5050 3350
+Wire Wire Line
+	5050 3850 5050 3350
+Wire Wire Line
+	5050 3850 5550 3850
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5100 3350
+Wire Wire Line
+	5400 4050 5400 3350
+Wire Wire Line
+	5400 4050 5550 4050
+$Comp
+L power:+VDC #PWR05
+U 1 1 5D30DE68
+P 3950 3350
+F 0 "#PWR05" H 3950 3250 50  0001 C CNN
+F 1 "+VDC" V 3950 3700 50  0000 C CNN
+F 2 "" H 3950 3350 50  0001 C CNN
+F 3 "" H 3950 3350 50  0001 C CNN
+	1    3950 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-VDC #PWR06
+U 1 1 5D30DE6E
+P 3950 3900
+F 0 "#PWR06" H 3950 3800 50  0001 C CNN
+F 1 "-VDC" V 3950 4250 50  0000 C CNN
+F 2 "" H 3950 3900 50  0001 C CNN
+F 3 "" H 3950 3900 50  0001 C CNN
+	1    3950 3900
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	6700 3200 6700 3500
+Wire Notes Line
+	6700 3500 7150 3500
+Wire Notes Line
+	7150 3500 7150 3200
+Wire Notes Line
+	7150 3200 6700 3200
+Text Notes 7100 3400 2    50   ~ 0
+HP34401
+Connection ~ 5400 3350
+Wire Wire Line
+	4800 3450 4800 3350
+Connection ~ 4800 3350
+Wire Wire Line
+	5400 3350 5600 3350
+Wire Wire Line
+	6550 3350 6700 3350
+Wire Wire Line
+	4250 4700 4250 3900
+Wire Wire Line
+	4250 3900 3950 3900
+Wire Notes Line
+	3250 3200 3250 4000
+Wire Notes Line
+	3250 3200 4000 3200
+Wire Notes Line
+	4000 3200 4000 4000
+Wire Wire Line
+	4250 3900 4800 3900
+Wire Wire Line
+	4800 3900 4800 3750
+Connection ~ 4250 3900
+Wire Wire Line
+	3950 3350 4800 3350
+$Comp
+L Connector:TestPoint_Probe TP9
+U 1 1 5D30DE96
+P 7700 3950
+F 0 "TP9" H 7850 4100 50  0001 L CNN
+F 1 "PK_CURR_DC" H 7800 4100 50  0000 L CNN
+F 2 "" H 7900 3950 50  0001 C CNN
+F 3 "~" H 7900 3950 50  0001 C CNN
+	1    7700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3950 8100 3950
+Text Notes 8250 3750 2    50   ~ 0
+Scope_Probe
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 5D30DE9F
+P 4800 3350
+F 0 "TP1" H 4953 3452 50  0001 L CNN
+F 1 "CAP_AC_CPL" H 4400 3500 50  0000 L CNN
+F 2 "" H 5000 3350 50  0001 C CNN
+F 3 "~" H 5000 3350 50  0001 C CNN
+	1    4800 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 3150 2    50   ~ 0
+Scope_probe
+$Comp
+L Device:D_Schottky D1
+U 1 1 5D311D1D
+P 6550 4450
+F 0 "D1" V 6596 4371 50  0000 R CNN
+F 1 "B3100" V 6505 4371 50  0000 R CNN
+F 2 "" H 6550 4450 50  0001 C CNN
+F 3 "~" H 6550 4450 50  0001 C CNN
+	1    6550 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 4250 5900 4250
+Wire Wire Line
+	5900 4300 5900 4250
+Connection ~ 5900 4250
+Wire Wire Line
+	5900 4250 5950 4250
+Wire Wire Line
+	6550 4600 6550 4700
+$Comp
+L Device:R_Small_US R4
+U 1 1 5D31F395
+P 6550 4150
+F 0 "R4" H 6618 4196 50  0000 L CNN
+F 1 "10K" H 6618 4105 50  0000 L CNN
+F 2 "" H 6550 4150 50  0001 C CNN
+F 3 "~" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4250 6550 4300
+Connection ~ 6550 4300
+Wire Wire Line
+	6550 3650 6550 4050
+Wire Wire Line
+	7150 3350 8550 3350
+Wire Wire Line
+	8550 3350 8550 4700
+Wire Wire Line
+	5750 4250 5750 4700
+Connection ~ 5750 4700
+$Comp
+L Device:R_Small_US R5
+U 1 1 5D32DFCE
+P 7100 4300
+F 0 "R5" H 7168 4346 50  0000 L CNN
+F 1 "10K" H 7168 4255 50  0000 L CNN
+F 2 "" H 7100 4300 50  0001 C CNN
+F 3 "~" H 7100 4300 50  0001 C CNN
+	1    7100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 5D32E06A
+P 6800 3950
+F 0 "D2" H 6800 3734 50  0000 C CNN
+F 1 "B3100" H 6800 3825 50  0000 C CNN
+F 2 "" H 6800 3950 50  0001 C CNN
+F 3 "~" H 6800 3950 50  0001 C CNN
+	1    6800 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 3950 6150 3950
+Wire Wire Line
+	6950 3950 7100 3950
+Wire Wire Line
+	7100 3950 7100 4200
+Wire Wire Line
+	7100 4400 7100 4700
+Connection ~ 7100 4700
+Wire Wire Line
+	7100 4700 7500 4700
+Wire Wire Line
+	7100 3950 7300 3950
+Wire Wire Line
+	7500 3950 7500 4200
+Connection ~ 7100 3950
+Wire Wire Line
+	7500 4400 7500 4700
+Connection ~ 7500 4700
+Wire Wire Line
+	7500 4700 8550 4700
+$Comp
+L Connector:TestPoint_Probe TP5
+U 1 1 5D33DD3F
+P 6200 4300
+F 0 "TP5" H 6353 4402 50  0001 L CNN
+F 1 "V_SCHTKY" H 6050 4450 50  0000 L CNN
+F 2 "" H 6400 4300 50  0001 C CNN
+F 3 "~" H 6400 4300 50  0001 C CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 4700
+Wire Wire Line
+	6550 4700 7100 4700
+Wire Wire Line
+	5750 4700 6550 4700
+Wire Wire Line
+	5750 3650 6550 3650
+Connection ~ 6200 4300
+Wire Wire Line
+	6200 4300 6550 4300
+Wire Wire Line
+	5900 4300 6200 4300
+$Comp
+L Connector:TestPoint_Probe TP3
+U 1 1 5D347564
+P 5600 3350
+F 0 "TP3" H 5753 3452 50  0001 L CNN
+F 1 "CCC_AC_CPL" H 5500 3500 50  0000 L CNN
+F 2 "" H 5800 3350 50  0001 C CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 3350
+Wire Wire Line
+	5600 3350 6100 3350
+Text Notes 5950 3150 2    50   ~ 0
+Scope_probe
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D34BA42
+P 7300 3950
+F 0 "TP8" H 7250 4250 50  0000 L CNN
+F 1 "PEAK_DETECT" H 7050 4150 50  0000 L CNN
+F 2 "" H 7500 3950 50  0001 C CNN
+F 3 "~" H 7500 3950 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 3950
+Wire Wire Line
+	7300 3950 7500 3950
+Wire Wire Line
+	7700 3950 7500 3950
+Connection ~ 7700 3950
+Connection ~ 7500 3950
+Wire Wire Line
+	6450 1600 6400 1600
+Wire Wire Line
+	6650 1600 6850 1600
+$Comp
+L power:+BATT #PWR03
+U 1 1 5D364DB7
+P 1650 1350
+F 0 "#PWR03" H 1650 1200 50  0001 C CNN
+F 1 "+BATT" H 1665 1523 50  0000 C CNN
+F 2 "" H 1650 1350 50  0001 C CNN
+F 3 "" H 1650 1350 50  0001 C CNN
+	1    1650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_measure-rescue:ADP7118-ADI U3
+U 1 1 5D366505
+P 2300 1700
+F 0 "U3" H 2300 2065 50  0000 C CNN
+F 1 "ADP7118" H 2300 1974 50  0000 C CNN
+F 2 "" H 2300 1700 50  0000 C CNN
+F 3 "" H 2300 1700 50  0000 C CNN
+	1    2300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1650 1900 1700
+Wire Wire Line
+	1900 1700 1650 1700
+Wire Wire Line
+	1650 1700 1650 1350
+Connection ~ 1900 1700
+Wire Wire Line
+	1900 1700 1900 1750
+Text Notes 1700 1100 2    50   ~ 0
++9V
+Wire Wire Line
+	2700 1700 2800 1700
+Wire Wire Line
+	2800 1700 2800 1650
+Wire Wire Line
+	2800 1600 2700 1600
+NoConn ~ 2700 1800
+Wire Wire Line
+	6000 1900 6000 2200
+Connection ~ 6000 2200
+Wire Wire Line
+	6000 2200 4500 2200
+Wire Wire Line
+	6850 1900 6850 2200
+Connection ~ 6850 2200
+Wire Wire Line
+	6850 2200 6000 2200
+Wire Wire Line
+	2800 1650 2950 1650
+Connection ~ 2800 1650
+Wire Wire Line
+	2800 1650 2800 1600
+Text GLabel 2950 1650 2    50   Input ~ 0
++5V
+$Comp
+L power:-BATT #PWR04
+U 1 1 5D389645
+P 1650 2200
+F 0 "#PWR04" H 1650 2050 50  0001 C CNN
+F 1 "-BATT" H 1665 2373 50  0000 C CNN
+F 2 "" H 1650 2200 50  0001 C CNN
+F 3 "" H 1650 2200 50  0001 C CNN
+	1    1650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2200 2300 2200
+Wire Wire Line
+	2300 2000 2300 2200
+Connection ~ 4500 2200
+Wire Wire Line
+	2300 2200 4500 2200
+Connection ~ 2300 2200
+Text GLabel 6000 1150 2    50   Input ~ 0
++5V
+Wire Wire Line
+	6000 1150 6000 1300
+Text GLabel 5750 3500 2    50   Input ~ 0
++5V
+Wire Wire Line
+	5750 3500 5750 3650
+Connection ~ 5750 3650
+$Comp
+L power:+BATT #PWR01
+U 1 1 5D39EE76
+P 1450 3850
+F 0 "#PWR01" H 1450 3700 50  0001 C CNN
+F 1 "+BATT" H 1465 4023 50  0000 C CNN
+F 2 "" H 1450 3850 50  0001 C CNN
+F 3 "" H 1450 3850 50  0001 C CNN
+	1    1450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_measure-rescue:ADP7118-ADI U1
+U 1 1 5D39EE7C
+P 2100 4200
+F 0 "U1" H 2100 4565 50  0000 C CNN
+F 1 "ADP7118" H 2100 4474 50  0000 C CNN
+F 2 "" H 2100 4200 50  0000 C CNN
+F 3 "" H 2100 4200 50  0000 C CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4150 1700 4200
+Wire Wire Line
+	1700 4200 1450 4200
+Wire Wire Line
+	1450 4200 1450 3850
+Connection ~ 1700 4200
+Wire Wire Line
+	1700 4200 1700 4250
+Text Notes 1500 3600 2    50   ~ 0
++9V
+Wire Wire Line
+	2500 4200 2600 4200
+Wire Wire Line
+	2600 4200 2600 4150
+Wire Wire Line
+	2600 4100 2500 4100
+NoConn ~ 2500 4300
+Wire Wire Line
+	2600 4150 2750 4150
+Connection ~ 2600 4150
+Wire Wire Line
+	2600 4150 2600 4100
+Text GLabel 2750 4150 2    50   Input ~ 0
++5V
+$Comp
+L power:-BATT #PWR02
+U 1 1 5D39EE91
+P 1450 4700
+F 0 "#PWR02" H 1450 4550 50  0001 C CNN
+F 1 "-BATT" H 1465 4873 50  0000 C CNN
+F 2 "" H 1450 4700 50  0001 C CNN
+F 3 "" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4700 2100 4700
+Wire Wire Line
+	2100 4500 2100 4700
+Connection ~ 2100 4700
+Wire Wire Line
+	2100 4700 4250 4700
+Connection ~ 4250 4700
+Wire Wire Line
+	4250 4700 5750 4700
+Wire Wire Line
+	6850 1600 7350 1600
+$EndSCHEMATC

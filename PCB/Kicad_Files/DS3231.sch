@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 15
+Title ""
+Date "2020-01-10"
+Rev "3"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Clock-Timing-Real-Time-Clocks:DS3231MZ_V__NRND U?
+U 1 1 5E0048BD
+P 5750 3950
+AR Path="/5E0048BD" Ref="U?"  Part="1" 
+AR Path="/5DFFDCCC/5E0048BD" Ref="U29"  Part="1" 
+F 0 "U29" H 5450 4250 60  0000 C CNN
+F 1 "DS3231MZ+" H 6050 4250 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 5950 4150 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 5950 4250 60  0001 L CNN
+F 4 "DS3231MZ/V+-ND" H 5950 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "DS3231MZ/V+" H 5950 4450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5950 4550 60  0001 L CNN "Category"
+F 7 "Clock/Timing - Real Time Clocks" H 5950 4650 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 5950 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/DS3231MZ-V-/DS3231MZ-V--ND/3133910" H 5950 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC RTC CLK/CALENDAR I2C 8-SOIC" H 5950 4950 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 5950 5050 60  0001 L CNN "Manufacturer"
+F 12 "Not For New Designs" H 5950 5150 60  0001 L CNN "Status"
+	1    5750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C160
+U 1 1 5E009283
+P 5450 3250
+F 0 "C160" H 5150 3300 50  0000 L CNN
+F 1 "0.1uF" H 5150 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 3250 50  0001 C CNN
+F 3 "~" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C168
+U 1 1 5E009AC7
+P 6200 3100
+F 0 "C168" H 5900 3150 50  0000 L CNN
+F 1 "0.1uF" H 5900 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 3100 50  0001 C CNN
+F 3 "~" H 6200 3100 50  0001 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB26
+U 1 1 5E010A26
+P 5050 3150
+F 0 "FB26" V 4905 3150 50  0000 C CNN
+F 1 "ferrite" V 4904 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 3150 50  0001 C CNN
+F 3 "~" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L PI_Blackbox:Battery_Holder_Keystone_2032_1058 BT1
+U 1 1 5E01FF92
+P 6400 3150
+F 0 "BT1" H 6518 3271 50  0000 L CNN
+F 1 "Battery_Holder" H 6518 3180 50  0000 L CNN
+F 2 "Pi_BlackBox_V4:BatteryHolder_Keystone_1058_2032" V 6400 3210 50  0001 C CNN
+F 3 "~" V 6400 3210 50  0001 C CNN
+F 4 "Keystone" H 6400 3150 50  0001 C CNN "MFG"
+F 5 "1058" H 6400 3150 50  0001 C CNN "MFG Part #"
+F 6 "36-1058-ND" H 6400 3150 50  0001 C CNN "Distributor Part #"
+	1    6400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2850 6400 2900
+Wire Wire Line
+	6200 2850 6200 3000
+Wire Wire Line
+	6200 3200 6200 3250
+Wire Wire Line
+	5750 3550 5750 2850
+Wire Wire Line
+	5650 3550 5650 3150
+Wire Wire Line
+	5650 3150 5450 3150
+Wire Wire Line
+	5750 2850 6200 2850
+Wire Wire Line
+	6200 2850 6400 2850
+Connection ~ 6200 2850
+Text Label 5850 2850 0    51   ~ 0
+V_Batt
+Wire Wire Line
+	6300 3950 6500 3950
+Wire Wire Line
+	6300 4050 6800 4050
+$Comp
+L Device:R_Small_US R125
+U 1 1 5E03FE15
+P 6500 3850
+F 0 "R125" H 6568 3896 50  0000 L CNN
+F 1 "10k" H 6568 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6500 3850 50  0001 C CNN
+F 3 "~" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R126
+U 1 1 5E0408E6
+P 6800 3850
+F 0 "R126" H 6868 3896 50  0000 L CNN
+F 1 "10k" H 6868 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6800 3850 50  0001 C CNN
+F 3 "~" H 6800 3850 50  0001 C CNN
+	1    6800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4050 6800 3950
+Wire Wire Line
+	6500 3750 6500 3650
+Wire Wire Line
+	6500 3650 6800 3650
+Wire Wire Line
+	6800 3650 6800 3750
+Wire Wire Line
+	5250 3950 4850 3950
+Wire Wire Line
+	5250 4050 4550 4050
+$Comp
+L Device:R_Small_US R124
+U 1 1 5E04455B
+P 4850 3750
+F 0 "R124" H 4650 3800 50  0000 L CNN
+F 1 "2k" H 4650 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4850 3750 50  0001 C CNN
+F 3 "~" H 4850 3750 50  0001 C CNN
+	1    4850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R123
+U 1 1 5E044B74
+P 4550 3750
+F 0 "R123" H 4300 3800 50  0000 L CNN
+F 1 "2k" H 4350 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4550 3750 50  0001 C CNN
+F 3 "~" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 3850
+Wire Wire Line
+	4850 3950 4850 3850
+Wire Wire Line
+	4550 3850 4550 4050
+Wire Wire Line
+	4850 3650 4850 3150
+Wire Wire Line
+	4850 3150 4950 3150
+Wire Wire Line
+	5150 3150 5450 3150
+Connection ~ 5450 3150
+Wire Wire Line
+	4550 3650 4550 3150
+Wire Wire Line
+	4550 3150 4850 3150
+Connection ~ 4850 3150
+Text GLabel 6900 3650 2    51   Input ~ 0
++3.3V
+Wire Wire Line
+	6900 3650 6800 3650
+Connection ~ 6800 3650
+Text GLabel 4550 3150 0    51   Input ~ 0
++3.3V
+Text Notes 5550 2700 0    55   ~ 11
+REAL TIME CLOCK\nDS3231
+$Comp
+L Device:R_Small_US R122
+U 1 1 5E08DAA7
+P 4000 4350
+F 0 "R122" V 3795 4350 50  0000 C CNN
+F 1 "22R" V 3886 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4000 4350 50  0001 C CNN
+F 3 "~" H 4000 4350 50  0001 C CNN
+	1    4000 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R121
+U 1 1 5E08DEB7
+P 4000 3950
+F 0 "R121" V 3795 3950 50  0000 C CNN
+F 1 "22R" V 3886 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4000 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3950 4100 3950
+Connection ~ 4850 3950
+Wire Wire Line
+	4550 4350 4100 4350
+Wire Wire Line
+	4550 4050 4550 4350
+Connection ~ 4550 4050
+Text GLabel 3900 3950 0    55   Input ~ 11
+PI_SDA
+Text GLabel 3900 4350 0    55   Input ~ 11
+PI_SCL
+$Comp
+L power:GNDA #PWR0265
+U 1 1 5E103D7A
+P 5750 4350
+F 0 "#PWR0265" H 5750 4100 50  0001 C CNN
+F 1 "GNDA" H 5755 4177 50  0000 C CNN
+F 2 "" H 5750 4350 50  0001 C CNN
+F 3 "" H 5750 4350 50  0001 C CNN
+	1    5750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0266
+U 1 1 5E10530C
+P 6200 3250
+F 0 "#PWR0266" H 6200 3000 50  0001 C CNN
+F 1 "GNDA" H 6205 3077 50  0000 C CNN
+F 2 "" H 6200 3250 50  0001 C CNN
+F 3 "" H 6200 3250 50  0001 C CNN
+	1    6200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0267
+U 1 1 5E10589B
+P 6400 3250
+F 0 "#PWR0267" H 6400 3000 50  0001 C CNN
+F 1 "GNDA" H 6405 3077 50  0000 C CNN
+F 2 "" H 6400 3250 50  0001 C CNN
+F 3 "" H 6400 3250 50  0001 C CNN
+	1    6400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0268
+U 1 1 5E1076F7
+P 5450 3350
+F 0 "#PWR0268" H 5450 3100 50  0001 C CNN
+F 1 "GNDA" H 5455 3177 50  0000 C CNN
+F 2 "" H 5450 3350 50  0001 C CNN
+F 3 "" H 5450 3350 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 2850 2    51   Input ~ 0
+VBat
+$EndSCHEMATC

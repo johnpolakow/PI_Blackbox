@@ -1,0 +1,39 @@
+must include -l ssh when compiling calibration program
+must have libssh installed already
+
+must set constants in cal_parameters.h/.cpp     or configure cal program to read the constants from an external file and then set symbolically
+    -CAL test station MAC addr
+
+
+
+
+
+libraries needed for compilation:
+    libssh
+    bcm2835
+    math
+
+show example compilation commands
+
+
+
+MUST install libssh:
+prereqs:
+cmake
+sudo apt-get install zlib1g-dev
+
+
+
+sudo apt-get update
+sudo apt-install libssl1.0-dev
+wget https://www.libssh.org/files/0.9/libssh-0.9.5.tar.xz
+tar -xvf libssh-0.9.5.tar.xz
+cd libssh-0.9.5
+mkdir build 
+cd build
+cmake ..
+make
+sudo make install
+
+
+

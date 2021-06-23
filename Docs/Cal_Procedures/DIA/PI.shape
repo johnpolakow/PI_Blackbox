@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <name>DIA - PI</name>
+  <icon>PI.png</icon>
+  <connections/>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:image x="-88.1851" y="-61.4702" width="122.311" height="97.4882" xlink:href="file:///home/mint/FLIR/Github/Docs/Cal_Procedures/01.JPG"/>
+  </svg:svg>
+</shape>

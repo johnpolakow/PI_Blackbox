@@ -1,0 +1,7 @@
+#####   CONFIG FILE  #####
+Blackbox_ID:    BB106
+Displacer_ID:   L163
+CCC_ID:         CCC213
+Compressor_ID:  073
+Dewar_ID:       M00013
+Profile_ID:     LoadLine2

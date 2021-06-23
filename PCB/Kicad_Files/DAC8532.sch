@@ -1,0 +1,669 @@
+EESchema Schematic File Version 4
+LIBS:Pi_Blackbox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DAC8532:DAC8532 U14
+U 1 1 5D35D4F6
+P 5900 6150
+F 0 "U14" H 5600 6550 50  0000 C CNN
+F 1 "DAC8552" H 6100 6550 50  0000 C CNN
+F 2 "" H 5900 6150 50  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/1257fc.pdf" H 5900 6150 50  0001 C CNN
+	1    5900 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 6200 0    50   Input ~ 0
+PI_SCK
+Text GLabel 4300 5850 0    50   Input ~ 0
+PI_MOSI
+$Comp
+L Device:R_Small_US R57
+U 1 1 5D35DCF2
+P 4750 5850
+F 0 "R57" V 4650 5850 50  0000 C CNN
+F 1 "50R" V 4850 5850 50  0000 C CNN
+F 2 "" H 4750 5850 50  0001 C CNN
+F 3 "~" H 4750 5850 50  0001 C CNN
+	1    4750 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R56
+U 1 1 5D35DD49
+P 4750 6500
+F 0 "R56" V 4850 6500 50  0000 C CNN
+F 1 "50R" V 4950 6500 50  0000 C CNN
+F 2 "" H 4750 6500 50  0001 C CNN
+F 3 "~" H 4750 6500 50  0001 C CNN
+	1    4750 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 6350 5100 6350
+$Comp
+L Device:R_Small_US R55
+U 1 1 5D35DE67
+P 4750 6200
+F 0 "R55" V 4650 6200 50  0000 C CNN
+F 1 "50R" V 4850 6200 50  0000 C CNN
+F 2 "" H 4750 6200 50  0001 C CNN
+F 3 "~" H 4750 6200 50  0001 C CNN
+	1    4750 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 6200 5300 6200
+Wire Wire Line
+	4650 6200 4300 6200
+Text GLabel 4300 6500 0    50   Input ~ 0
+DAC8532_CS
+$Comp
+L power:GNDA #PWR052
+U 1 1 5D35E81B
+P 5900 6650
+F 0 "#PWR052" H 5900 6400 50  0001 C CNN
+F 1 "GNDA" H 5905 6477 50  0000 C CNN
+F 2 "" H 5900 6650 50  0001 C CNN
+F 3 "" H 5900 6650 50  0001 C CNN
+	1    5900 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 5950 2    50   Input ~ 0
+V_DAC
+Text GLabel 6900 6200 2    50   Input ~ 0
+V_DAC_B
+Wire Wire Line
+	5900 4850 5600 4850
+$Comp
+L Device:C_Small C49
+U 1 1 5D35FE64
+P 5600 5050
+F 0 "C49" H 5692 5096 50  0000 L CNN
+F 1 ".1uF" H 5692 5005 50  0000 L CNN
+F 2 "" H 5600 5050 50  0001 C CNN
+F 3 "~" H 5600 5050 50  0001 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR051
+U 1 1 5D3600AF
+P 5600 5150
+F 0 "#PWR051" H 5600 4900 50  0001 C CNN
+F 1 "GNDA" H 5605 4977 50  0000 C CNN
+F 2 "" H 5600 5150 50  0001 C CNN
+F 3 "" H 5600 5150 50  0001 C CNN
+	1    5600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4950 5600 4850
+Text GLabel 4700 4850 0    50   Input ~ 0
++5V
+$Comp
+L Device:C_Small C48
+U 1 1 5D3609FD
+P 5250 5050
+F 0 "C48" H 5342 5096 50  0000 L CNN
+F 1 "1uF" H 5342 5005 50  0000 L CNN
+F 2 "" H 5250 5050 50  0001 C CNN
+F 3 "~" H 5250 5050 50  0001 C CNN
+	1    5250 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4950 5250 4850
+Wire Wire Line
+	5250 4850 5600 4850
+Connection ~ 5600 4850
+$Comp
+L power:GNDA #PWR045
+U 1 1 5D360C54
+P 5250 5150
+F 0 "#PWR045" H 5250 4900 50  0001 C CNN
+F 1 "GNDA" H 5255 4977 50  0000 C CNN
+F 2 "" H 5250 5150 50  0001 C CNN
+F 3 "" H 5250 5150 50  0001 C CNN
+	1    5250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB5
+U 1 1 5D360DA1
+P 5050 4850
+F 0 "FB5" V 4813 4850 50  0000 C CNN
+F 1 "500mA rated" V 4904 4850 50  0000 C CNN
+F 2 "" V 4980 4850 50  0001 C CNN
+F 3 "~" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 4850 5250 4850
+Connection ~ 5250 4850
+Wire Wire Line
+	5300 5900 5200 5900
+Text GLabel 4300 5600 0    50   Input ~ 0
++2V5_VREF
+$Comp
+L Device:C_Small C1
+U 1 1 5D361B90
+P 4800 5050
+F 0 "C1" H 4892 5096 50  0000 L CNN
+F 1 ".01uF" H 4892 5005 50  0000 L CNN
+F 2 "" H 4800 5050 50  0001 C CNN
+F 3 "~" H 4800 5050 50  0001 C CNN
+	1    4800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR044
+U 1 1 5D361BFA
+P 4800 5150
+F 0 "#PWR044" H 4800 4900 50  0001 C CNN
+F 1 "GNDA" H 4805 4977 50  0000 C CNN
+F 2 "" H 4800 5150 50  0001 C CNN
+F 3 "" H 4800 5150 50  0001 C CNN
+	1    4800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4950 4800 4850
+Wire Wire Line
+	4800 4850 4950 4850
+Wire Wire Line
+	4700 4850 4800 4850
+Connection ~ 4800 4850
+$Comp
+L opencdm:LTC6655 U15
+U 1 1 5D362FDD
+P 4350 2750
+F 0 "U15" H 4350 3197 60  0000 C CNN
+F 1 "LTC6655-2.5" H 4350 3091 60  0000 C CNN
+F 2 "" H 4350 2750 60  0000 C CNN
+F 3 "" H 4350 2750 60  0000 C CNN
+	1    4350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3200 4100 3300
+Wire Wire Line
+	4100 3300 4250 3300
+Wire Wire Line
+	4600 3300 4600 3200
+Wire Wire Line
+	4250 3200 4250 3300
+Connection ~ 4250 3300
+Wire Wire Line
+	4250 3300 4350 3300
+Wire Wire Line
+	4450 3200 4450 3300
+Connection ~ 4450 3300
+Wire Wire Line
+	4450 3300 4600 3300
+Wire Wire Line
+	4350 3300 4350 3400
+Connection ~ 4350 3300
+Wire Wire Line
+	4350 3300 4450 3300
+$Comp
+L power:GNDA #PWR058
+U 1 1 5D363E39
+P 4350 3400
+F 0 "#PWR058" H 4350 3150 50  0001 C CNN
+F 1 "GNDA" H 4355 3227 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R58
+U 1 1 5D364515
+P 3500 2500
+F 0 "R58" H 3568 2546 50  0000 L CNN
+F 1 "1K" H 3568 2455 50  0000 L CNN
+F 2 "" H 3500 2500 50  0001 C CNN
+F 3 "~" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2600 3500 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	3500 2400 3500 2350
+Wire Wire Line
+	3500 2350 3850 2350
+Wire Wire Line
+	3850 2350 3850 2550
+$Comp
+L Device:C_Small C53
+U 1 1 5D366761
+P 3700 2950
+F 0 "C53" H 3792 2996 50  0000 L CNN
+F 1 "4.7uF" H 3792 2905 50  0000 L CNN
+F 2 "" H 3700 2950 50  0001 C CNN
+F 3 "~" H 3700 2950 50  0001 C CNN
+	1    3700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C51
+U 1 1 5D3667D0
+P 3250 2950
+F 0 "C51" H 3342 2996 50  0000 L CNN
+F 1 ".01uF" H 3342 2905 50  0000 L CNN
+F 2 "" H 3250 2950 50  0001 C CNN
+F 3 "~" H 3250 2950 50  0001 C CNN
+	1    3250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3050 3250 3300
+Wire Wire Line
+	3250 3300 3500 3300
+Wire Wire Line
+	3700 3300 3700 3050
+Wire Wire Line
+	3100 2700 3250 2700
+Wire Wire Line
+	3500 2700 3700 2700
+Wire Wire Line
+	3250 2850 3250 2700
+Connection ~ 3250 2700
+Wire Wire Line
+	3250 2700 3500 2700
+Wire Wire Line
+	3700 2850 3700 2700
+Connection ~ 3700 2700
+Wire Wire Line
+	3700 2700 3850 2700
+$Comp
+L power:GNDA #PWR056
+U 1 1 5D369C89
+P 3500 3300
+F 0 "#PWR056" H 3500 3050 50  0001 C CNN
+F 1 "GNDA" H 3505 3127 50  0000 C CNN
+F 2 "" H 3500 3300 50  0001 C CNN
+F 3 "" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 3300
+Wire Wire Line
+	3500 3300 3700 3300
+Text GLabel 3100 2700 0    50   Input ~ 0
++5V
+$Comp
+L Linear_Technology:LTC2057 U16
+U 1 1 5D36ABAD
+P 6100 2650
+F 0 "U16" H 6350 2550 50  0000 L CNN
+F 1 "AD8628" H 6250 2450 50  0000 L CNN
+F 2 "" H 6050 2750 50  0000 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/2057f.pdf" H 6441 2559 50  0001 L CNN
+F 4 "Linear Technology" H 6700 2950 60  0001 C CNN "MFN"
+F 5 "LTC2057" H 6500 3050 60  0001 C CNN "MFP"
+	1    6100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C52
+U 1 1 5D36E519
+P 4950 1800
+F 0 "C52" H 5042 1846 50  0000 L CNN
+F 1 ".1uF" H 5042 1755 50  0000 L CNN
+F 2 "" H 4950 1800 50  0001 C CNN
+F 3 "~" H 4950 1800 50  0001 C CNN
+	1    4950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR057
+U 1 1 5D36FF71
+P 4950 1900
+F 0 "#PWR057" H 4950 1650 50  0001 C CNN
+F 1 "GNDA" H 4955 1727 50  0000 C CNN
+F 2 "" H 4950 1900 50  0001 C CNN
+F 3 "" H 4950 1900 50  0001 C CNN
+	1    4950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR060
+U 1 1 5D36FFD9
+P 6000 2950
+F 0 "#PWR060" H 6000 2700 50  0001 C CNN
+F 1 "GNDA" H 6005 2777 50  0000 C CNN
+F 2 "" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C50
+U 1 1 5D3739BF
+P 4400 1800
+F 0 "C50" H 4492 1846 50  0000 L CNN
+F 1 ".01uF" H 4492 1755 50  0000 L CNN
+F 2 "" H 4400 1800 50  0001 C CNN
+F 3 "~" H 4400 1800 50  0001 C CNN
+	1    4400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR053
+U 1 1 5D37478B
+P 4400 1900
+F 0 "#PWR053" H 4400 1650 50  0001 C CNN
+F 1 "GNDA" H 4405 1727 50  0000 C CNN
+F 2 "" H 4400 1900 50  0001 C CNN
+F 3 "" H 4400 1900 50  0001 C CNN
+	1    4400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1700 4950 1600
+Text GLabel 4250 1600 0    50   Input ~ 0
++5V
+$Comp
+L Device:Ferrite_Bead_Small FB6
+U 1 1 5D382145
+P 4700 1600
+F 0 "FB6" V 4463 1600 50  0000 C CNN
+F 1 "500mA rated" V 4554 1600 50  0000 C CNN
+F 2 "" V 4630 1600 50  0001 C CNN
+F 3 "~" H 4700 1600 50  0001 C CNN
+	1    4700 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 1600 4950 1600
+Connection ~ 4950 1600
+Wire Wire Line
+	4400 1700 4400 1600
+Wire Wire Line
+	4400 1600 4600 1600
+Wire Wire Line
+	4250 1600 4400 1600
+Connection ~ 4400 1600
+Wire Wire Line
+	4950 1600 5450 1600
+$Comp
+L Device:R_Small_US R61
+U 1 1 5D38BE03
+P 6550 2650
+F 0 "R61" V 6345 2650 50  0000 C CNN
+F 1 "1K" V 6436 2650 50  0000 C CNN
+F 2 "" H 6550 2650 50  0001 C CNN
+F 3 "~" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2650 6650 2650
+Wire Wire Line
+	4850 2700 4850 2550
+$Comp
+L Device:C_Small C55
+U 1 1 5D39175B
+P 6100 1900
+F 0 "C55" V 6000 1900 50  0000 C CNN
+F 1 "1uF" V 6200 1900 50  0000 C CNN
+F 2 "" H 6100 1900 50  0001 C CNN
+F 3 "~" H 6100 1900 50  0001 C CNN
+	1    6100 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R60
+U 1 1 5D399278
+P 6100 1600
+F 0 "R60" V 6000 1600 50  0000 C CNN
+F 1 "10K" V 6150 1600 50  0000 C CNN
+F 2 "" H 6100 1600 50  0001 C CNN
+F 3 "~" H 6100 1600 50  0001 C CNN
+	1    6100 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C54
+U 1 1 5D3A484E
+P 5600 2900
+F 0 "C54" H 5692 2946 50  0000 L CNN
+F 1 "4.7uF" H 5692 2855 50  0000 L CNN
+F 2 "" H 5600 2900 50  0001 C CNN
+F 3 "~" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR059
+U 1 1 5D3A4929
+P 5600 3000
+F 0 "#PWR059" H 5600 2750 50  0001 C CNN
+F 1 "GNDA" H 5605 2827 50  0000 C CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "" H 5600 3000 50  0001 C CNN
+	1    5600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2550
+Wire Wire Line
+	5600 2550 5800 2550
+$Comp
+L Device:R_Small_US R59
+U 1 1 5D3A5DA0
+P 5300 2550
+F 0 "R59" V 5095 2550 50  0000 C CNN
+F 1 "1K" V 5186 2550 50  0000 C CNN
+F 2 "" H 5300 2550 50  0001 C CNN
+F 3 "~" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 2550
+Wire Wire Line
+	6000 2100 6000 2350
+Wire Wire Line
+	5800 2750 5750 2750
+Wire Wire Line
+	5750 2750 5750 1900
+Connection ~ 5750 1900
+Wire Wire Line
+	5750 1900 6000 1900
+Wire Wire Line
+	6400 2650 6400 1900
+Wire Wire Line
+	6200 1900 6400 1900
+Connection ~ 6700 2650
+$Comp
+L Device:C_Small C56
+U 1 1 5D3BD554
+P 6700 2850
+F 0 "C56" H 6792 2896 50  0000 L CNN
+F 1 "4.7uF" H 6792 2805 50  0000 L CNN
+F 2 "" H 6700 2850 50  0001 C CNN
+F 3 "~" H 6700 2850 50  0001 C CNN
+	1    6700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2650 6700 2750
+$Comp
+L power:GNDA #PWR061
+U 1 1 5D3BECA3
+P 6700 3000
+F 0 "#PWR061" H 6700 2750 50  0001 C CNN
+F 1 "GNDA" H 6705 2827 50  0000 C CNN
+F 2 "" H 6700 3000 50  0001 C CNN
+F 3 "" H 6700 3000 50  0001 C CNN
+	1    6700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2950 6700 3000
+Text GLabel 7300 2650 2    50   Input ~ 0
++2V5_VREF
+Wire Wire Line
+	4900 6350 4900 6500
+Wire Wire Line
+	4900 6050 4900 5850
+Wire Wire Line
+	4900 5850 4850 5850
+Wire Wire Line
+	4900 6050 5300 6050
+Wire Wire Line
+	4300 6500 4650 6500
+Wire Wire Line
+	4850 6500 4900 6500
+Wire Wire Line
+	4300 5850 4650 5850
+Wire Wire Line
+	4300 5600 5200 5600
+Wire Wire Line
+	5200 5600 5200 5900
+Wire Wire Line
+	5900 4850 5900 5650
+Wire Wire Line
+	6000 1600 5750 1600
+Wire Wire Line
+	6200 1600 6700 1600
+Wire Wire Line
+	6450 2650 6400 2650
+Connection ~ 6400 2650
+Wire Wire Line
+	5750 1600 5750 1900
+Wire Wire Line
+	6700 1600 6700 2650
+Text Label 3750 2700 0    50   ~ 0
+Vref_In
+Text Label 3500 2350 0    50   ~ 0
+Vref_Shdn
+Text Label 4850 2550 0    50   ~ 0
+Vref_force
+Text Label 5400 2550 0    50   ~ 0
+Vref_buf
+Text Label 5750 1600 0    50   ~ 0
+buf_inv
+Text Label 6200 1900 0    50   ~ 0
+buf_comp
+Text Label 6700 2650 0    50   ~ 0
+ref_buf_out
+Wire Wire Line
+	6700 2650 7200 2650
+Text Label 4600 5600 0    50   ~ 0
+vref_DAC
+Text Label 4400 5850 0    50   ~ 0
+MOSI
+Text Label 4350 6500 0    50   ~ 0
+DAC_CS
+Text Label 4400 6200 0    50   ~ 0
+SCK
+Text Label 4900 6200 0    50   ~ 0
+DAC_SCK
+Text Label 4950 6050 0    50   ~ 0
+DAC_DIN
+Text Label 5700 4850 0    50   ~ 0
+DAC_PS
+Wire Wire Line
+	6500 5950 6900 5950
+Text Label 6500 5950 0    50   ~ 0
+VDAC_OUT
+Wire Wire Line
+	6500 6200 6900 6200
+Text Label 6500 6200 0    50   ~ 0
+VDAC_AUX
+Text Label 4800 1600 0    50   ~ 0
+AD8628_PS_FILT
+Wire Wire Line
+	6000 2100 5450 2100
+Wire Wire Line
+	5450 2100 5450 1600
+Text Notes 4400 1150 0    157  ~ 31
+Voltage Reference
+Text Notes 5200 4450 0    157  ~ 31
+DAC
+NoConn ~ 6100 2900
+NoConn ~ 6100 2400
+Wire Wire Line
+	4850 2550 5200 2550
+Wire Wire Line
+	5400 2550 5600 2550
+Connection ~ 5600 2550
+Text GLabel 10200 5200 0    50   Input ~ 0
+V_DAC_B
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D9E1F7D
+P 10300 5200
+F 0 "TP8" H 10358 5274 50  0000 L CNN
+F 1 "TestPoint" H 10358 5229 50  0001 L CNN
+F 2 "" H 10500 5200 50  0001 C CNN
+F 3 "~" H 10500 5200 50  0001 C CNN
+	1    10300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5200 10300 5200
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D9E6890
+P 7200 2550
+F 0 "TP6" H 7150 2750 50  0000 L CNN
+F 1 "TestPoint" H 7258 2579 50  0001 L CNN
+F 2 "" H 7400 2550 50  0001 C CNN
+F 3 "~" H 7400 2550 50  0001 C CNN
+	1    7200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2550 7200 2650
+Wire Wire Line
+	7200 2650 7300 2650
+Connection ~ 7200 2650
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D9ED1F8
+P 5100 6350
+F 0 "TP5" H 5150 6600 50  0000 R CNN
+F 1 "TestPoint" H 5042 6468 50  0001 R CNN
+F 2 "" H 5300 6350 50  0001 C CNN
+F 3 "~" H 5300 6350 50  0001 C CNN
+	1    5100 6350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5100 6350
+Wire Wire Line
+	5100 6350 5300 6350
+Text GLabel 10100 5550 0    50   Input ~ 0
+V_DAC
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D9F25B0
+P 10200 5550
+F 0 "TP7" H 10258 5624 50  0000 L CNN
+F 1 "TestPoint" H 10258 5579 50  0001 L CNN
+F 2 "" H 10400 5550 50  0001 C CNN
+F 3 "~" H 10400 5550 50  0001 C CNN
+	1    10200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5550 10200 5550
+$EndSCHEMATC

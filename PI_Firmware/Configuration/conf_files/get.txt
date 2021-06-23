@@ -1,0 +1,14 @@
+sudo sed -r 's/(^.[^ ]+).*/\\1/' /etc/sudoers.d/010_pi-nopasswd
+
+sudo sed -n '/ALL=(ALL)/p' /etc/sudoers.d/010_pi-nopasswd
+
+sudo sed -n '/autologin-user=/p' /etc/lightdm/lightdm.conf"
+
+sudo sed -i -e '/autologin-user/s/=[a-zA-Z0-9]*/=%s/' /etc/lightdm/lightdm.conf
+
+sudo sed -n '/agetty --autologin /p' /etc/systemd/system/autologin@.service
+
+echo “ExecStart=-/sbin/agetty --autologin pi –noclear %I $TERM” | sed -n -e 's/ExecStart=-[/]\{1\}sbin[/]\{1\}agetty --autologin \([a-zA-Z]*\)/\1/p'
+
+
+echo "ExecStart=-/sbin/agetty --autologin pi --noclear %I $TERM" | sed -e 's/ExecStart=-\/sbin\/agetty --autologin[ ][a-zA-Z0-9]*[ ]/ExecStart=-\/sbin\/agetty --autologin pi /'

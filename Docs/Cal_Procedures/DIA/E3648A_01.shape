@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <name>DIA - E3648A_01</name>
+  <icon>E3648A_01.png</icon>
+  <connections/>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:image x="0" y="0" width="37.4" height="24.65" xlink:href="file:///home/mint/FLIR/Github/Docs/Cal_Procedures/E3648A_01.jpg"/>
+  </svg:svg>
+</shape>

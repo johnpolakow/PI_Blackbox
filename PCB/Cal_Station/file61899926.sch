@@ -1,0 +1,650 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 6189D39F
+P 2800 4850
+AR Path="/6189D39F" Ref="J?"  Part="1" 
+AR Path="/61899927/6189D39F" Ref="J?"  Part="1" 
+F 0 "J?" H 2878 4838 50  0000 L CNN
+F 1 "CCC_RTN" H 2700 4950 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 3000 5050 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3000 5150 60  0001 L CNN
+F 4 "J576-ND" H 3000 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 3000 5350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 3000 5450 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 3000 5550 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3000 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 3000 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 3000 5850 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 3000 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3000 6050 60  0001 L CNN "Status"
+	1    2800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 6189D3AE
+P 3200 4850
+AR Path="/6189D3AE" Ref="J?"  Part="1" 
+AR Path="/61899927/6189D3AE" Ref="J?"  Part="1" 
+F 0 "J?" H 3300 4850 50  0000 L CNN
+F 1 "CCC_IN" H 3100 4950 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 3400 5050 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3400 5150 60  0001 L CNN
+F 4 "J576-ND" H 3400 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 3400 5350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 3400 5450 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 3400 5550 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3400 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 3400 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 3400 5850 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 3400 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3400 6050 60  0001 L CNN "Status"
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 16 style dash_dot rgb(0, 0, 2)
+	2800 4900 2800 3800
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	3200 4850 3200 3800
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9CCB
+P 1700 5250
+AR Path="/618A9CCB" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9CCB" Ref="J?"  Part="1" 
+F 0 "J?" H 1778 5238 50  0000 L CNN
+F 1 "Cool_PWR_+" H 1500 5400 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 1900 5450 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1900 5550 60  0001 L CNN
+F 4 "J576-ND" H 1900 5650 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 1900 5750 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1900 5850 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1900 5950 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1900 6050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 1900 6150 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 1900 6250 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 1900 6350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1900 6450 60  0001 L CNN "Status"
+	1    1700 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9CDA
+P 1250 5250
+AR Path="/618A9CDA" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9CDA" Ref="J?"  Part="1" 
+F 0 "J?" H 1328 5238 50  0000 L CNN
+F 1 "Cool_Pwr_RTN" H 1250 5400 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 1450 5450 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1450 5550 60  0001 L CNN
+F 4 "J576-ND" H 1450 5650 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 1450 5750 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1450 5850 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1450 5950 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1450 6050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 1450 6150 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 1450 6250 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 1450 6350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1450 6450 60  0001 L CNN "Status"
+	1    1250 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9CE9
+P 5000 5200
+AR Path="/618A9CE9" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9CE9" Ref="J?"  Part="1" 
+F 0 "J?" H 4850 5200 50  0000 L CNN
+F 1 "DAC_AUX" H 4850 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 5200 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5200 5500 60  0001 L CNN
+F 4 "J576-ND" H 5200 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 5200 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5200 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 5200 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5200 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 5200 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 5200 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 5200 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5200 6400 60  0001 L CNN "Status"
+	1    5000 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9CF8
+P 5350 5200
+AR Path="/618A9CF8" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9CF8" Ref="J?"  Part="1" 
+F 0 "J?" H 5200 5200 50  0000 L CNN
+F 1 "Diode_SNS_+" H 4900 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 5550 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5550 5500 60  0001 L CNN
+F 4 "J576-ND" H 5550 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 5550 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5550 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 5550 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5550 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 5550 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 5550 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 5550 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5550 6400 60  0001 L CNN "Status"
+	1    5350 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D07
+P 5350 4800
+AR Path="/618A9D07" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D07" Ref="J?"  Part="1" 
+F 0 "J?" H 5200 4800 50  0000 L CNN
+F 1 "Diode_SNS-" H 5050 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 5550 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5550 5100 60  0001 L CNN
+F 4 "J576-ND" H 5550 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 5550 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5550 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 5550 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5550 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 5550 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 5550 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 5550 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5550 6000 60  0001 L CNN "Status"
+	1    5350 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D16
+P 5000 4800
+AR Path="/618A9D16" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D16" Ref="J?"  Part="1" 
+F 0 "J?" H 4850 4800 50  0000 L CNN
+F 1 "GNDA" H 4950 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 5200 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5200 5100 60  0001 L CNN
+F 4 "J576-ND" H 5200 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 5200 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5200 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 5200 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 5200 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 5200 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 5200 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 5200 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5200 6000 60  0001 L CNN "Status"
+	1    5000 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D25
+P 6600 5200
+AR Path="/618A9D25" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D25" Ref="J?"  Part="1" 
+F 0 "J?" H 6600 5100 50  0000 L CNN
+F 1 "VLoad/8" H 6400 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 6800 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6800 5500 60  0001 L CNN
+F 4 "J576-ND" H 6800 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 6800 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6800 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 6800 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6800 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 6800 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 6800 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 6800 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6800 6400 60  0001 L CNN "Status"
+	1    6600 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D43
+P 6950 5200
+AR Path="/618A9D43" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D43" Ref="J?"  Part="1" 
+F 0 "J?" H 6950 5100 50  0000 L CNN
+F 1 "ILoad" H 6850 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 7150 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7150 5500 60  0001 L CNN
+F 4 "J576-ND" H 7150 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 7150 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7150 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 7150 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7150 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 7150 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 7150 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 7150 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7150 6400 60  0001 L CNN "Status"
+	1    6950 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D52
+P 10450 4750
+AR Path="/618A9D52" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D52" Ref="J?"  Part="1" 
+F 0 "J?" H 10550 4750 50  0000 L CNN
+F 1 "REF100_RTN" H 10300 4850 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 10650 4950 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 10650 5050 60  0001 L CNN
+F 4 "J576-ND" H 10650 5150 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 10650 5250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 10650 5350 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 10650 5450 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 10650 5550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 10650 5650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 10650 5750 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 10650 5850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10650 5950 60  0001 L CNN "Status"
+	1    10450 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D61
+P 10850 4750
+AR Path="/618A9D61" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D61" Ref="J?"  Part="1" 
+F 0 "J?" H 10928 4738 50  0000 L CNN
+F 1 "REF100+" H 10650 4850 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 11050 4950 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 11050 5050 60  0001 L CNN
+F 4 "J576-ND" H 11050 5150 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 11050 5250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 11050 5350 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 11050 5450 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 11050 5550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 11050 5650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 11050 5750 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 11050 5850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11050 5950 60  0001 L CNN "Status"
+	1    10850 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D70
+P 6950 4800
+AR Path="/618A9D70" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D70" Ref="J?"  Part="1" 
+F 0 "J?" H 6800 4750 50  0000 L CNN
+F 1 "VLoad_RTN" H 6600 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 7150 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7150 5100 60  0001 L CNN
+F 4 "J576-ND" H 7150 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 7150 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7150 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 7150 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7150 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 7150 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 7150 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 7150 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7150 6000 60  0001 L CNN "Status"
+	1    6950 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D7F
+P 6600 4800
+AR Path="/618A9D7F" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D7F" Ref="J?"  Part="1" 
+F 0 "J?" H 6700 4750 50  0000 L CNN
+F 1 "VLoad+" H 6500 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 6800 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6800 5100 60  0001 L CNN
+F 4 "J576-ND" H 6800 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 6800 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6800 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 6800 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6800 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 6800 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 6800 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 6800 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6800 6000 60  0001 L CNN "Status"
+	1    6600 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9D9D
+P 4600 4800
+AR Path="/618A9D9D" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9D9D" Ref="J?"  Part="1" 
+F 0 "J?" H 4678 4788 50  0000 L CNN
+F 1 "2V5_Filt" H 4500 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 4800 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4800 5100 60  0001 L CNN
+F 4 "J576-ND" H 4800 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 4800 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4800 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 4800 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4800 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 4800 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 4800 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 4800 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4800 6000 60  0001 L CNN "Status"
+	1    4600 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DAC
+P 4200 4800
+AR Path="/618A9DAC" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DAC" Ref="J?"  Part="1" 
+F 0 "J?" H 4278 4788 50  0000 L CNN
+F 1 "CoolerV/4" H 4100 4900 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 4400 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4400 5100 60  0001 L CNN
+F 4 "J576-ND" H 4400 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 4400 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4400 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 4400 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4400 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 4400 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 4400 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 4400 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4400 6000 60  0001 L CNN "Status"
+	1    4200 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DBB
+P 4600 5200
+AR Path="/618A9DBB" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DBB" Ref="J?"  Part="1" 
+F 0 "J?" H 4700 5200 50  0000 L CNN
+F 1 "GND" H 4500 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 4800 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4800 5500 60  0001 L CNN
+F 4 "J576-ND" H 4800 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 4800 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4800 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 4800 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4800 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 4800 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 4800 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 4800 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4800 6400 60  0001 L CNN "Status"
+	1    4600 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DCA
+P 4200 5200
+AR Path="/618A9DCA" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DCA" Ref="J?"  Part="1" 
+F 0 "J?" H 4278 5188 50  0000 L CNN
+F 1 "CoolerV" H 4100 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 4400 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4400 5500 60  0001 L CNN
+F 4 "J576-ND" H 4400 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 4400 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4400 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 4400 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 4400 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 4400 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 4400 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 4400 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4400 6400 60  0001 L CNN "Status"
+	1    4200 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DD9
+P 1250 4800
+AR Path="/618A9DD9" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DD9" Ref="J?"  Part="1" 
+F 0 "J?" H 1050 4850 50  0000 L CNN
+F 1 "Meter_V-" H 950 4950 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 1450 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1450 5100 60  0001 L CNN
+F 4 "J576-ND" H 1450 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 1450 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1450 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1450 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1450 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 1450 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 1450 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 1450 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1450 6000 60  0001 L CNN "Status"
+	1    1250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DEA
+P 1700 4800
+AR Path="/618A9DEA" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DEA" Ref="J?"  Part="1" 
+F 0 "J?" H 1778 4788 50  0000 L CNN
+F 1 "Cool_PWR_+" H 1500 4700 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 1900 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1900 5100 60  0001 L CNN
+F 4 "J576-ND" H 1900 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 1900 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1900 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1900 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1900 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 1900 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 1900 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 1900 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1900 6000 60  0001 L CNN "Status"
+	1    1700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5100 1700 4950
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	1600 4800 1600 4500
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618A9DFB
+P 2250 4800
+AR Path="/618A9DFB" Ref="J?"  Part="1" 
+AR Path="/61899927/618A9DFB" Ref="J?"  Part="1" 
+F 0 "J?" H 2100 4800 50  0000 L CNN
+F 1 "Meter_OUT" H 2050 4700 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 2450 5000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2450 5100 60  0001 L CNN
+F 4 "J576-ND" H 2450 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 2450 5300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2450 5400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 2450 5500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2450 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 2450 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 2450 5800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 2450 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2450 6000 60  0001 L CNN "Status"
+	1    2250 4800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	2250 4750 2250 4150
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 4)
+	1600 4800 1650 4800
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	2000 5250 2000 3700
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	2000 5250 1700 5250
+Text Notes 2100 5450 0    55   ~ 11
+CAL BOX
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618AED9A
+P 5950 1800
+AR Path="/618AED9A" Ref="J?"  Part="1" 
+AR Path="/61899927/618AED9A" Ref="J?"  Part="1" 
+F 0 "J?" H 6028 1788 50  0000 L CNN
+F 1 "RTN" H 6028 1697 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 6150 2000 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6150 2100 60  0001 L CNN
+F 4 "J576-ND" H 6150 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 6150 2300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6150 2400 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 6150 2500 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6150 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 6150 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 6150 2800 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 6150 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 3000 60  0001 L CNN "Status"
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618AEDA9
+P 5950 1400
+AR Path="/618AEDA9" Ref="J?"  Part="1" 
+AR Path="/61899927/618AEDA9" Ref="J?"  Part="1" 
+F 0 "J?" H 6028 1388 50  0000 L CNN
+F 1 "VIN" H 6028 1297 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 6150 1600 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6150 1700 60  0001 L CNN
+F 4 "J576-ND" H 6150 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 6150 1900 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6150 2000 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 6150 2100 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 6150 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 6150 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 6150 2400 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 6150 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 2600 60  0001 L CNN "Status"
+	1    5950 1400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	5950 1400 5950 1050
+Wire Wire Line
+	5950 1550 6700 1550
+Wire Notes Line width 16 style dash_dot rgb(0, 0, 0)
+	5950 1800 5650 1800
+Text Notes 6000 2150 0    50   ~ 0
+34401A
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618B49AE
+P 8700 1600
+AR Path="/618B49AE" Ref="J?"  Part="1" 
+AR Path="/61899927/618B49AE" Ref="J?"  Part="1" 
+F 0 "J?" H 8778 1588 50  0000 L CNN
+F 1 "RTN" H 8778 1497 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 8900 1800 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 1900 60  0001 L CNN
+F 4 "J576-ND" H 8900 2000 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 8900 2100 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8900 2200 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 8900 2300 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 2400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 8900 2500 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 8900 2600 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 8900 2700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8900 2800 60  0001 L CNN "Status"
+	1    8700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618B49BD
+P 8700 1250
+AR Path="/618B49BD" Ref="J?"  Part="1" 
+AR Path="/61899927/618B49BD" Ref="J?"  Part="1" 
+F 0 "J?" H 8778 1238 50  0000 L CNN
+F 1 "VIN" H 8778 1147 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 8900 1450 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 1550 60  0001 L CNN
+F 4 "J576-ND" H 8900 1650 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 8900 1750 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8900 1850 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 8900 1950 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 2050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 8900 2150 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 8900 2250 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 8900 2350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8900 2450 60  0001 L CNN "Status"
+	1    8700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 618B49CC
+P 8700 1950
+AR Path="/618B49CC" Ref="J?"  Part="1" 
+AR Path="/61899927/618B49CC" Ref="J?"  Part="1" 
+F 0 "J?" H 8778 1938 50  0000 L CNN
+F 1 "AMP_IN" H 8778 1847 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 8900 2150 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 2250 60  0001 L CNN
+F 4 "J576-ND" H 8900 2350 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 8900 2450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8900 2550 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 8900 2650 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 8900 2750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 8900 2850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 8900 2950 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 8900 3050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8900 3150 60  0001 L CNN "Status"
+	1    8700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2100 8700 2150
+Wire Wire Line
+	8700 1750 9150 1750
+Wire Wire Line
+	8700 1400 9350 1400
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	8700 1250 8700 900 
+Wire Notes Line width 16 style dash_dot rgb(0, 0, 0)
+	8450 1600 8700 1600
+Wire Notes Line width 16 style dash_dot rgb(237, 0, 2)
+	8700 1950 8250 1950
+Text Notes 8100 2450 0    50   ~ 0
+34401B
+Wire Wire Line
+	1250 4950 1250 5100
+$Comp
+L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J?
+U 1 1 61939376
+P 7300 5200
+F 0 "J?" H 7150 5150 50  0000 L CNN
+F 1 "ILoad_RTN" H 6950 5300 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 7500 5400 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7500 5500 60  0001 L CNN
+F 4 "J576-ND" H 7500 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 7500 5700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7500 5800 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 7500 5900 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7500 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 7500 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 7500 6200 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 7500 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7500 6400 60  0001 L CNN "Status"
+	1    7300 5200
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

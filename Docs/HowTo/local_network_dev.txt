@@ -1,0 +1,19 @@
+Discover local Connected Network Devices:
+
+sudo arp-scan -l --interface=eth0
+
+sudo nmap -sP 192.168.123.0/24
+
+
+sudo arp-scan -I eth0 192.168.123.0/24
+sudo arp-scan --localnet -I eth0
+nmap -sn --send-ip 192.168.123.0/24
+
+
+nmap -sn --send-ip 10.198.23.*
+sudo arp-scan 10.198.21.235
+sudo arp-scan --localnet -g -I wlan0 | grep "Raspberry"
+
+
+sudo arp-scan --localnet -g -I wlan0 | grep "Raspberry"
+sudo arp-scan --localnet -g -I eth0
