@@ -1,20 +1,20 @@
 # Raspberry Pi Based Data Acquistion System
 
 # Directories in Repository    
-## Docs    
+## Docs/    
 Contains various documentation info  created while building the software. Specification of commands to the client interface. Information on the ADC Loop, which is continuosly read out by the Raspberry Pi. Some notes on initial configuration of a Pi DAQ. Some how to files that may be useful while administrating the Pi DAQ.
 
-## PCB    
+## PCB/    
 PI DAQ PCB Files    
-Contains the files needed to FAB the Pi DAQ. All Gerber board files are present. The native Kicad project files are present as well, for maintenance and modification. There is rework required for the version of gerbers used here. I'll try to include the rework file, as well as a "fixed/corrected" version of the Kicad project files. 
+Contains the files needed to FAB the Pi DAQ. All Gerber board files are present. The native Kicad project files are present as well, for maintenance and modification. There is rework required for the version of gerbers used here. The rework directions are in the **Docs/** folder. If time permits, will include a "fixed/corrected" version of the Kicad project files, eliminating the need for future rework. 
 
 Cal Station Board Files
-The PCB files for the Cal Station board are present as well, however I would not reccomend ordering this baord. It was done extremely quickly and many mistakes were made. There was MUCH rework required to make the PCB functional. Almost all of the relay footprints are off. The relay part fits, but some of the pins are swapped. It was unpleasant to re-route all the signals with hookup wire, you would save yourself much time by starting over.    
+The PCB files for the Cal Station board are present as well, however I would not reccomend ordering this board. It was done extremely quickly and many mistakes were made. There was MUCH rework required to make the PCB functional. Almost all of the relay footprints are off. The relay part fits, but some of the pins are swapped. It was unpleasant to re-route all the signals with hookup wire, you would save yourself much time by starting over.    
 
 All BOMS should be present as well.    
 
 
-## Pi Firmware
+## Pi Firmware/
 This folder contains the release versions of firmware that runs on the Pi DAQ. The different versions are kept for documentation and bug fixes. Also, the Configuration folder contains useful code to configure a Pi for the first time. It performs functions like:
   - Configuring hostname on the Pi
   - Configure user accounts
