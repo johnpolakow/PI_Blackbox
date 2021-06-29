@@ -111,10 +111,10 @@ environment variables
 
 
 struct Disk_Usage{
-		char kernel_location[30];
+	char kernel_location[30];
     char filesystem[20];
     char total_space[10];
-		char used_space[10];
+    char used_space[10];
     char free_space[10];
     char mount_location[100];
     char percent_filled[20];
@@ -168,7 +168,7 @@ void Set_Wallpaper(char* wallpaper_filepath);
 //  HELPER FUNCTIONS
 
 void Backup_System_Files();
-void  Echo_Env_Variable(char* variable, char* value);
+void Echo_Env_Variable(char* variable, char* value);
 void Enable_Sudo_No_Password_For_User(char* USERNAME);
 void Enable_Desktop_Autologin(char* USERNAME);
 void Enable_Console_Autologin(char* USERNAME);
